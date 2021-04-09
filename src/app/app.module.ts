@@ -16,6 +16,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { LlistaPublicComponent } from './pages/llista-public/llista-public.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { LlistaPublicComponent } from './pages/llista-public/llista-public.compo
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment. firebase),
+    ScullyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
