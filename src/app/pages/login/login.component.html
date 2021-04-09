@@ -1,0 +1,12 @@
+<div class="card" id="divGeneralLogin">
+    <div class="card-header">
+        <h1 id="textH1Login">Iniciar Sessió</h1>
+    </div>
+    <div class="card-body" id="textH1Login">
+        <button type="button" class="btn btn-primary btn-sm" (click)="login()" *ngIf="!allowedUserError">Iniciar Secio</button>
+        <button type="button" class="btn btn-primary btn-sm" (click)="login()" *ngIf="allowedUserError">Intentar de nou</button>
+        <div class="container" *ngIf="allowedUserError">
+            <h4>Aquest usuari no existeix</h4>
+        </div>
+    </div>
+</div>

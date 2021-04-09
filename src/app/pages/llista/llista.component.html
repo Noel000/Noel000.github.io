@@ -1,0 +1,24 @@
+<table class="table" style="margin-top: 1%; margin-bottom: 5%;">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Asignatura</th>
+            <th scope="col">Titol</th>
+            <th scope="col">Data</th>
+            <th scope="col">Operacions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let practica of practiques; let i=index">
+            <th scope="row">{{practica.tag}}</th>
+            <td>{{practica.titol}}</td>
+            <td>{{practica.dataexercici}}</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" (click)="veureDetalls(i)">Detalls</button>
+                    <!--<button type="button" class="btn btn-secondary">Actualitzar</button>-->
+                    <button type="button" class="btn btn-secondary" (click)="esborraDetalls(i)">Eliminar</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
